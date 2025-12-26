@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>About KidsPaint</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #0f1115;
+      --panel: rgba(255,255,255,0.06);
+      --panel2: rgba(255,255,255,0.04);
+      --text: #e6e8eb;
+      --muted: #9aa1a9;
+      --accent: #7aa2f7;
+      --accent2: #b18cff;
+      --border: rgba(255,255,255,0.10);
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+                   "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.55;
+    }
+
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 22px 64px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, var(--panel), transparent 85%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px 18px 14px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-weight: 800;
+      font-size: 1.7rem;
+      letter-spacing: 0.2px;
+    }
+
+    .sub {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .logoRow {
+      margin-top: 14px;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    img {
+      max-width: 240px;
+      height: auto;
+      opacity: 0.95;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--panel2);
+      color: var(--muted);
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    @media (min-width: 820px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.05rem;
+      letter-spacing: 0.15px;
+    }
+
+    .card p {
+      margin: 0 0 10px;
+      color: var(--text);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--text);
+    }
+
+    li { margin: 6px 0; }
+
+    .muted { color: var(--muted); }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    a.button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(122,162,247,0.14);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 650;
+    }
+
+    a.button:hover {
+      background: rgba(122,162,247,0.20);
+    }
+
+    a.link {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a.link:hover { text-decoration: underline; }
+
+    .statement {
+      font-size: 1.05rem;
+      font-weight: 650;
+      color: var(--accent2);
+      margin: 0;
+    }
+
+    .fineprint {
+      font-size: 0.86rem;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 12px;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      background: rgba(255,255,255,0.06);
+      padding: 2px 6px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+
+    <section class="hero">
+      <div class="brand">
+        <div>
+          <h1>KidsPaint</h1>
+          <div class="sub">by Fivethirty Softworks • A simple open-source drawing app for kids (and parents!)</div>
+        </div>
+        <div class="pill">macOS • Mouse/Trackpad • Game Controller</div>
+      </div>
+
+      <div class="logoRow">
+        <img src="fivethirtylogo.png" alt="Fivethirty Softworks logo" />
+        <div class="muted">Coded in West Virginia by Sasquatch</div>
+      </div>
+
+      <div class="links">
+        <a class="button" href="https://github.com/" target="_blank" rel="noopener">Source Code (GitHub)</a>
+        <a class="button" href="https://github.com/" target="_blank" rel="noopener">Report an Issue</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>About</h2>
+      <p>KidsPaint is a fun and easy-to-use drawing application designed specifically for children and families. It encourages creativity by providing a simple interface with a variety of brush tips and stickers, allowing users to express themselves through art.</p>
+      <p>The app supports multiple input methods, including mouse, trackpad, and game controllers, making it accessible and enjoyable for users of all ages and skill levels.</p>
+    </section>
+
+    <section class="card">
+      <h2>Credits</h2>
+      <p class="muted">Copyright 2025 Fivethirty Softworks.</p>
+      <p class="muted">Source code is available on GitHub.</p>
+      <p class="muted">@fivethirtysoftworks</p>
+      <p class="statement">This app is dedicated to my children Paige, Fynn &amp; Felix.</p>
+    </section>
+
+    <section class="fineprint">
+      <p style="margin:0 0 10px;"><b>Trademark Notice</b><br>
+        Apple, macOS, iPhone, iPad, and related marks are trademarks of Apple Inc. Xbox is a trademark of Microsoft Corporation. PlayStation is a trademark of Sony Interactive Entertainment Inc. All other trademarks are the property of their respective owners.
+      </p>
+      <p style="margin:0;">KidsPaint by Fivethirty Softworks is not affiliated with, endorsed by, or sponsored by Apple, Microsoft, or Sony.</p>
+    </section>
+
+  </main>
+</body>
+</html>

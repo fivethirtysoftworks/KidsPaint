@@ -1,6 +1,6 @@
 # KidsPaint
 
-**KidsPaint** by **Fivethirty Softworks** is a simple, open-source drawing app for kids (and parents).  
+**KidsPaint** by **Fivethirty Softworks** is a simple, open-source painting app for kids (and parents).  
 It focuses on creativity **without clutter** — no documents to manage, no confusing modes.
 
 Just open the app, paint, and save.

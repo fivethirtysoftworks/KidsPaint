@@ -1,120 +1,106 @@
 # KidsPaint
-KidsPaint is a simple drawing app for kids (and parents!) built for macOS &amp; iPadOS that lets you:
-Draw with brushes
-Add big, fun stickers
-Change colors and sizes
-Open a photo and draw on top of it
-Save your artwork as a PNG image
-There are no documents to manage and no confusing menus. Just draw and save.
 
-The Main Tools (Top Toolbar)
-At the top of the window you’ll see four tool buttons:
-🖌 Brush
-Draw freely on the canvas.
-Use the Size slider in the bottom bar to make lines thicker or thinner.
-Use the Color bar to change the drawing color.
-🧽 Eraser
-Works just like the brush, but erases instead of drawing.
-Size controls how wide the eraser is.
+**KidsPaint** by **Fivethirty Softworks** is a simple, open-source drawing app for kids (and parents).  
+It focuses on creativity **without clutter** — no documents to manage, no confusing modes.
 
-✨ Stickers
-Lets you place big, colorful stickers.
-Choose a sticker from the sticker strip at the bottom.
-Click anywhere on the canvas to place it.
-Stickers can be moved, resized, rotated, and deleted.
+Just open the app, paint, and save.
 
-✋ Move
-Pan (drag) the canvas around.
-Pinch or scroll to zoom in and out.
-Does not draw or place stickers.
+---
 
-🎨 Bottom Control Bar (Kid-Friendly Controls)
-The bottom bar changes depending on the selected tool.
+## Why KidsPaint?
 
-Color Selection
-Big colored circles let you quickly pick a color.
-A color picker lets parents choose any custom color.
-Color affects new drawings and new stickers only (existing ones stay the same).
+KidsPaint is designed to be:
+- **Easy for kids to explore**
+- **Calm and predictable**
+- **Forgiving** — no accidental loss of work
+- **Fun without being overwhelming**
 
-Size Control
-Brush / Eraser: controls line thickness.
-Stickers: controls how large new stickers will be (default is intentionally big).
+Every feature is intentional. If something doesn’t help kids create, it doesn’t belong.
 
-Sticker Strip
-Shows sticker icons only (no text).
-Tap a sticker to select it.
-Scroll sideways to see more stickers.
+---
 
-Working with Stickers
-Once a sticker is placed:
-Select a Sticker
-Click on it once.
-A dashed box and handles will appear.
+## Features
 
-Move
-Drag the sticker anywhere on the canvas.
+### Painting
+- Multiple brush tip styles:
+  - **Round**
+  - **Square**
+  - **Chisel**
+  - **Crayon**
+  - **Spray Paint**
+  - **Neon**
+- Simple size control using a single slider
 
-Resize
+### Colors
+- 10 large preset colors for fast selection
+- Full Color Picker for custom colors
+- Color changes affect **new drawings only**
+  (existing artwork is never modified)
 
-Drag the square handle in the corner.
+### Stickers
+Big, fun stickers that are easy to grab and manipulate:
+- Star, Heart, Smile, Flower
+- Sun, Moon & Stars, Cloud
+- Lightning Bolt, Balloons
+- Crown, Music Note, Paw Print
 
-Rotate
-Drag the round handle above the sticker.
+Stickers can be:
+- Moved
+- Resized
+- Rotated (hold **Shift** to snap)
+- Deleted
 
-Delete
-Select the sticker.
-Press Delete or Backspace on the keyboard.
+### Background Images
+- Import **PNG, JPG, or TIFF** images
+- Draw directly on top of photos
+- Original images are never modified
 
-Background Images
-Open an Image
-Click Open Image (photo icon) in the top toolbar.
-Choose a PNG, JPG, or TIFF image.
-The image becomes the canvas background.
+### Saving
+- Export artwork as a standard **PNG**
+- No custom file formats
+- Default filename format:
+- KidsPaint MM-DD-YY HH-MM-SS.png
+- (prevents accidental overwrites)
 
-Remove Background
-Open the More (•••) menu.
-Choose Remove Background Image.
+---
 
-Saving Your Artwork
-Save as PNG
-Click Save PNG (download icon).
-Choose a location and filename.
-Your artwork is saved as a standard image file.
-KidsPaint does not use special document formats.
-What you save is exactly what you see.
+## Game Controller Support (macOS)
 
-Clearing the Canvas
-Click the Trash icon.
-Confirm when asked.
-This removes all drawings and stickers.
-(This confirmation is intentional to prevent accidents.)
+KidsPaint supports any controller recognized by macOS, including:
+- Xbox Wireless Controllers (Xbox One / Series X|S)
+- PlayStation DualShock 4 and DualSense
+- MFi-supported controllers
+- Many Made-for-iPhone/iPad controllers
 
-View Controls
-Reset View
-Click Reset View (circular arrow).
-Zoom and position return to normal.
+### Typical Controller Mapping
+- **Left Stick** — Move the on-screen cursor
+- **A / Cross**
+- Tap → place a single brush mark
+- Hold + move → continuous drawing
+- **D-Pad Left / Right** — Cycle colors
+- **D-Pad Up / Down** — Cycle brush tips
+- **Menu / Options** — Undo / Redo (controller-dependent)
 
-Zoom
-Pinch on a trackpad or scroll while zoomed.
+> Tip: Click once on the canvas to ensure it has focus if controller input seems inactive.  
+> Mouse and trackpad always work alongside controller input.
 
-Pan
-Use the Move tool to drag the canvas.
+---
 
-Helpful Tips
-Bigger stickers are intentional — kids like them.
-Existing drawings and stickers never change color accidentally.
-There’s no “wrong” way to use the app.
-Parents can set things up, then let kids explore safely.
+## Interface Overview
 
-Keyboard Shortcuts (Optional)
-Delete / Backspace – delete selected sticker
-Trackpad pinch – zoom
-Drag (Move tool) – pan
+### Top Toolbar
+- **Brush** — Draw freely
+- **Eraser** — Erase strokes
+- **Stickers** — Place and edit stickers
+- **Move** — Pan and zoom the canvas
 
-Designed With Kids in Mind
-KidsPaint is built to:
-Avoid clutter
-Prevent accidental loss of work
-Be forgiving and playful
-Stay simple even as drawings get complex
+### Bottom Control Bar
+- Changes depending on the selected tool
+- Large, icon-based controls
+- Designed for small hands and quick access
 
+---
+
+## Requirements
+- **macOS 26 or later**
+- **Xcode 26 or later** (for building from source)

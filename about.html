@@ -69,7 +69,7 @@ body{
       display:flex; align-items:center; gap:10px;
       text-decoration:none;
     }
- .logo{
+    .logo{
       width:64px; height:64px; border-radius: 0px;
       flex: 0 0 auto;
     }
@@ -332,19 +332,18 @@ body{
 <body>
   <div class="nav">
     <div class="nav-inner">
-      <a class="brand" href="#top" aria-label="KidsPaint Home">
-        <!-- Replace the gradient logo with your actual logo image if you want -->
+      <a class="brand" href="index.html" aria-label="KidsPaint Home">
         <div class="logo" aria-hidden="true"><img src="assets/app-icon-small.png" alt="KidsPaint loading screen"></div>
         <span>KidsPaint</span>
       </a>
 
       <div class="nav-links" aria-label="Page sections">
-        <a href="#features">Features</a>
-        <a href="#screenshots">Screenshots</a>
-        <a href="#download">Download</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#screenshots">Screenshots</a>
+        <a href="index.html#download">Download</a>
       </div>
 
-      <a class="btn primary" href="#download">Get KidsPaint</a>
+      <a class="btn primary" href="index.html#download">Get KidsPaint</a>
     </div>
 
     <!-- Rainbow bar accent (matches RainbowBar() stripes) -->
@@ -354,147 +353,47 @@ body{
   </div>
 
   <main id="top" class="container">
-    <header class="hero">
-      <div class="hero-grid">
-        <div>
-          <div class="pill"><span class="dot"></span> A kid-friendly painting app</div>
-          <h1>Create, doodle, sticker-bomb, and save masterpieces.</h1>
-          <p class="lead">
-            KidsPaint by Fivethirty Softworks is built for fast, frustration-free creativity: simple tools, big buttons, fun stickers, game controller support, 
-            and an interface that stays out of the way. Free for macOS 13 Ventura and later.
-
-          </p>
-
-          <div class="cta-row">
-            <a class="btn primary" href="#download" aria-label="Download on GitHub">Download (GitHub)</a>
-            <a class="btn" href="#download" aria-label="Download on Source Code">Download (Sorce Code)</a>
-          </div>
-
-          <div class="meta">
-            Version 1.0.0 Beta 2
-          </div>
-        </div>
-
-        <div class="card preview" aria-label="App preview card">
-          <div class="preview-top">
-            <div>Preview</div>
-            <div style="opacity:.75;">KidsPaint</div>
-          </div>
-
-          <div class="rainbow-bar thin" aria-hidden="true"></div>
-
-          <!-- Replace with real screenshot:
-               <img src="assets/hero-screenshot.png" alt="KidsPaint screenshot" style="width:100%; border-radius:16px;" /> -->
-          <div class="ph">
-  <img src="assets/screenshot-hero.png" alt="KidsPaint app icon">
-</div>
-        </div>
-      </div>
-    </header>
-
-    <section id="features">
-      <div class="section-head">
-        <h2>Features</h2>
-        <p>Designed for quick fun: tools are obvious, forgiving, and easy for kids to use.</p>
-      </div>
-
-      <div class="rainbow-bar thin" style="margin: 6px 0 14px;" aria-hidden="true"></div>
-
-      <div class="grid3">
-        <div class="feature">
-          <div class="icon">🖌️</div>
-          <h3>Brushes & Eraser</h3>
-          <p>Paint with simple tools and easy sizing. Clean up fast with an eraser that behaves predictably.</p>
-        </div>
-
-        <div class="feature">
-          <div class="icon">🧩</div>
-          <h3>Stickers</h3>
-          <p>Drop in stickers, resize/rotate, and place them anywhere. Big, fun, and obvious controls.</p>
-        </div>
-
-        <div class="feature">
-          <div class="icon">🎨</div>
-          <h3>Color Palette</h3>
-          <p>Quick-access colors with a kid-friendly layout. Make switching colors feel instant.</p>
-        </div>
-
-        <div class="feature">
-          <div class="icon">🎮</div>
-          <h3>Game Controller Support</h3>
-          <p>Paint like never before with game controller support, turning painting into something that feels more like a game than an app.</p>
-        </div>
-
-        <div class="feature">
-          <div class="icon">💾</div>
-          <h3>Save & Share</h3>
-          <p>Export creations as images for easy sharing and printing (depending on your platform build).</p>
-        </div>
-
-        <div class="feature">
-          <div class="icon">🧒</div>
-          <h3>Made for Kids</h3>
-          <p>Big touch targets, clean layout, and a workflow that keeps kids in the creative zone.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="screenshots">
-      <div class="section-head">
-        <h2>Screenshots</h2>
-        <p></p>
-      </div>
-
-      <div class="rainbow-bar thin" style="margin: 6px 0 14px;" aria-hidden="true"></div>
-
-      <div class="shots">
-        <div class="card shot-card">
-          <strong>Screenshot Gallery</strong>
-          <div class="shot-grid">
-            <div class="ph">
-  <img src="assets/screenshot-1.png" alt="KidsPaint loading screen">
-</div>
-
-<div class="ph">
-  <img src="assets/screenshot-2.png" alt="KidsPaint canvas">
-</div>
-
-<div class="ph">
-  <img src="assets/screenshot-3.png" alt="KidsPaint about window">
-</div>
-
-<div class="ph">
-  <img src="assets/screenshot-4.png" alt="KidsPaint user guide">
-</div>
-          </div>
-        </div>
-
-        <div class="card shot-card">
-          <strong>App Icon</strong>
-                             <div class="ph">
-  <img src="assets/app-icon.png" alt="KidsPaint app icon">
-</div>
-        </div>
-      </div>
-    </section>
-
     <section id="download">
       <div class="section-head">
-        <h2>Download</h2>
-        <p>Free for macOS 13 Ventura and later.</p>
+        <h2>About</h2>
+        <p>"It's a work in progress."</p>
       </div>
 
       <div class="rainbow-bar thin" style="margin: 6px 0 14px;" aria-hidden="true"></div>
 
-      <div class="download">
-        <div class="left">
-          <h3>Get KidsPaint</h3>
-          <p>KidsPaint by Fivethirty Softworks is still in beta—expect a few rough edges. The free beta is available on GitHub for macOS 13 Ventura and later.</p>
-        </div>
-        <div class="cta-row" style="margin:0;">
-          <a class="btn primary" href="https://github.com/fivethirtysoftworks/KidsPaint/releases/download/Beta/KidsPaint.Installer.1.0.Beta.2.dmg">Download beta on GitHub</a>
-          <a class="btn" href="https://github.com/fivethirtysoftworks/KidsPaint">Download Source Code</a>
-        </div>
+      <section id="about" style="margin: 0 auto; padding: 24px 0;">
+  <div class="card" style="padding: 18px;">
+    <h2 style="margin: 0 0 6px;">About KidsPaint</h2>
+  
+    <p style="margin: 0 0 16px;">
+      KidsPaint by Fivethirty Softworks is built for fast, frustration-free creativity. It focuses on simple tools, big buttons, fun stickers, game controller support, and an interface that stays out of the way so kids can just create.
+    </p>
+    
+    <p style="margin: 0 0 16px;">
+      KidsPaint is free, ad-free, and available for macOS 13 Ventura and later.
+    </p>
+    
+     <p style="margin: 0 0 16px;">
+      The project started with a simple problem: my 4-year-old wanted a macOS painting app with no ads, lots of stickers, and the ability to paint using his game controller. Those requests weren’t being met by existing apps, so KidsPaint was born as an open-source project designed to do exactly that—and nothing more.
+    </p>
+    
+    <h2 style="margin: 0 0 6px;">About the Developer</h2>
+  
+    <p style="margin: 0 0 16px;">
+      Hi, I’m Cornelius—a dad to four kids and an open-source software developer in my spare time. I publish my work under Fivethirty Softworks.
+    </p>
+    
+    <p style="margin: 0 0 16px;">
+      I have a passion for the outdoors, technology, macOS, and stickers. I primarily work with Swift, HTML, CSS, and JavaScript and I’m a core contributor to the KidsPaint open-source project.
+    </p>
+    
+     <p style="margin: 0 0 16px;">
+      I believe strongly in community-driven software and in building tools that are free, respectful, and genuinely useful. KidsPaint is my way of turning a small, real-world need into something others can enjoy too.
+    </p>
+
+    </div>
+  </div>
+</section>
       </div>
     </section>
 

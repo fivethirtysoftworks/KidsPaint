@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KidsPaint User Guide</title>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #4b5563;
+      --border: rgba(0,0,0,0.10);
+      --link: #2563eb;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+                   "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+      font-size: 16px;
+    }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 28px 28px 40px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 34px;
+      letter-spacing: 0.2px;
+    }
+
+    .brand {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 22px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+
+    h3 {
+      margin: 18px 0 6px;
+      font-size: 17px;
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    ul {
+      margin: 8px 0 10px;
+      padding-left: 20px;
+    }
+
+    li { margin: 6px 0; }
+
+    .toc {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      background: rgba(0,0,0,0.02);
+      margin: 14px 0 20px;
+    }
+
+    .toc-title {
+      margin: 0 0 8px;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .toc a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    .toc a:hover { text-decoration: underline; }
+
+    .note {
+      border-left: 4px solid rgba(37,99,235,0.45);
+      background: rgba(37,99,235,0.06);
+      padding: 10px 12px;
+      border-radius: 10px;
+      margin: 10px 0 0;
+      color: #0f172a;
+    }
+
+    .footer {
+      margin-top: 32px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      background: rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,0,0,0.08);
+      padding: 2px 6px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+
+    <h1>User Guide</h1>
+    <div class="brand">
+      <div><strong>KidsPaint</strong></div>
+      <div>by Fivethirty Softworks</div>
+    </div>
+
+    <p>
+      KidsPaint is a simple, open-source painting app for kids (and parents!) that focuses on creativity without clutter.
+      There are no documents to manage and no confusing modes — just open the app, paint, and save.
+    </p>
+
+    <p>
+      KidsPaint runs on <strong>macOS and iPadOS</strong>, with a consistent, kid-friendly interface across all platforms.
+    </p>
+
+    <!-- TABLE OF CONTENTS -->
+    <section class="toc">
+      <div class="toc-title">Contents</div>
+      <ul>
+        <li><a href="#what-you-can-do">What You Can Do</a></li>
+        <li><a href="#main-tools">Main Tools</a></li>
+        <li><a href="#bottom-bar">Bottom Control Bar</a></li>
+        <li><a href="#stickers">Working With Stickers</a></li>
+        <li><a href="#controller">Game Controller Support</a></li>
+        <li><a href="#background">Background Images</a></li>
+        <li><a href="#saving">Saving Artwork</a></li>
+        <li><a href="#clearing">Clearing the Canvas</a></li>
+        <li><a href="#view">View Controls</a></li>
+        <li><a href="#legal">Legal & Beta Notice</a></li>
+      </ul>
+    </section>
+
+    <!-- WHAT YOU CAN DO -->
+    <section id="what-you-can-do">
+      <h2>What You Can Do</h2>
+      <ul>
+        <li><strong>Draw freely</strong> using multiple brush styles.</li>
+        <li><strong>Add large, fun stickers</strong> that can be moved, resized, rotated, recolored, and deleted.</li>
+        <li><strong>Change colors instantly</strong> using big, easy-to-tap color buttons or the full color picker.</li>
+        <li><strong>Import photos</strong> and draw directly on top of them.</li>
+        <li><strong>Use touch, mouse, trackpad, Apple Pencil, or a game controller</strong>.</li>
+        <li><strong>Save artwork as PNG</strong> — no special file formats.</li>
+      </ul>
+    </section>
+
+    <!-- MAIN TOOLS -->
+    <section id="main-tools">
+      <h2>Main Tools</h2>
+
+      <h3>Brush</h3>
+      <ul>
+        <li>Freehand drawing tool.</li>
+        <li>Adjust size with the slider.</li>
+        <li>Choose different brush tips.</li>
+      </ul>
+
+      <h3>Eraser</h3>
+      <ul>
+        <li>Erases brush strokes.</li>
+        <li>Size adjustable.</li>
+      </ul>
+
+      <h3>Stickers</h3>
+      <ul>
+        <li>Tap to place large stickers.</li>
+        <li>Stickers are intentionally oversized and easy to grab.</li>
+      </ul>
+
+      <h3>Move</h3>
+      <ul>
+        <li>Pan the canvas.</li>
+        <li>Zoom in and out.</li>
+      </ul>
+    </section>
+
+    <!-- BOTTOM BAR -->
+    <section id="bottom-bar">
+      <h2>Bottom Control Bar</h2>
+
+      <h3>Color Selection</h3>
+      <ul>
+        <li>Large preset color buttons.</li>
+        <li>Full color picker for custom colors.</li>
+        <li>Color applies to new strokes and new stickers.</li>
+      </ul>
+
+      <h3>Size Control</h3>
+      <ul>
+        <li>Brush / Eraser: line thickness.</li>
+        <li>Stickers: default sticker size.</li>
+      </ul>
+
+      <h3>Brush Tips</h3>
+      <ul>
+        <li>Round</li>
+        <li>Square</li>
+        <li>Chisel</li>
+        <li>Crayon</li>
+        <li>Spray</li>
+        <li>Neon</li>
+      </ul>
+    </section>
+
+    <!-- STICKERS -->
+    <section id="stickers">
+      <h2>Working With Stickers</h2>
+
+      <ul>
+        <li>Tap to select a sticker.</li>
+        <li>Drag to move.</li>
+        <li>Resize and rotate using on-screen handles.</li>
+        <li>Delete using the Delete key or context action.</li>
+      </ul>
+    </section>
+
+    <!-- CONTROLLER -->
+    <section id="controller">
+      <h2>Game Controller Support</h2>
+
+      <p>Supported on macOS and iPadOS using any controller recognized by the system.</p>
+
+      <ul>
+        <li><strong>Left stick</strong> – Move cursor</li>
+        <li><strong>Primary button</strong> – Draw / place</li>
+        <li><strong>D-Pad</strong> – Change colors and brush tips</li>
+        <li><strong>Triggers</strong> – Adjust size or zoom (when available)</li>
+      </ul>
+
+      <div class="note">
+        Tip: Click or tap the canvas once to ensure it has focus before using a controller.
+      </div>
+    </section>
+
+    <!-- BACKGROUND -->
+    <section id="background">
+      <h2>Background Images</h2>
+      <ul>
+        <li>Import PNG or JPG images.</li>
+        <li>Draw and place stickers on top.</li>
+        <li>Remove the background image at any time.</li>
+      </ul>
+    </section>
+
+    <!-- SAVING -->
+    <section id="saving">
+      <h2>Saving Artwork</h2>
+      <ul>
+        <li>Saved as standard PNG files.</li>
+        <li>Default filename includes date and time.</li>
+        <li>No documents or project files to manage.</li>
+      </ul>
+    </section>
+
+    <!-- CLEAR -->
+    <section id="clearing">
+      <h2>Clearing the Canvas</h2>
+      <ul>
+        <li>Tap the Trash icon.</li>
+        <li>Confirm to prevent accidents.</li>
+      </ul>
+    </section>
+
+    <!-- VIEW -->
+    <section id="view">
+      <h2>View Controls</h2>
+      <ul>
+        <li>Reset View returns zoom and position to default.</li>
+        <li>Pinch or scroll to zoom.</li>
+        <li>Use Move tool to pan.</li>
+      </ul>
+    </section>
+
+    <!-- LEGAL -->
+    <section id="legal">
+      <h2>Legal & Beta Notice</h2>
+      <p>
+        KidsPaint is beta software. Features may change and bugs may exist.
+        Use at your own risk.
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <span>KidsPaint User Guide</span>
+      <span style="font-size:11px;">Version 1.0.0 Beta 3</span>
+    </div>
+
+  </main>
+</body>
+</html>
